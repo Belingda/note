@@ -1,1 +1,85 @@
-<mxfile host="app.diagrams.net" modified="2021-09-14T12:03:59.852Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" version="15.1.0" etag="dSDrnlXv895rAmviUf-U" type="github"><diagram id="3x4JXi07wZhh6eTZm7_K">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-14T12:22:36.536Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="6bdOBNiSiLugrCjD0oix" version="15.1.0" type="github">
+  <diagram id="3x4JXi07wZhh6eTZm7_K" name="Page-1">
+    <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-13" value="cluster(集群)" style="swimlane;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="90" y="20" width="600" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-8" value="Node" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-13">
+          <mxGeometry x="110" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-9" value="Node" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-13">
+          <mxGeometry x="235" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-10" value="Node" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-13">
+          <mxGeometry x="360" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-5" value="Master" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-13">
+          <mxGeometry x="95" y="50" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-15" value="Master" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="192.5" y="360" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-16" value="kude-apisever" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-15">
+          <mxGeometry x="95" y="30" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-17" value="kude-controller-manager" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-15">
+          <mxGeometry x="72.5" y="75" width="140" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-20" value="etcd服务：服务发现" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-15">
+          <mxGeometry x="72.5" y="110" width="125" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-19" value="集群控制节点&lt;br&gt;接受控制命令" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.17;size=30;position=0.42;" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-21" value="Node（物理机或者虚拟机）" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="200" y="570" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-22" value="pod" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-21">
+          <mxGeometry x="30" y="60" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-23" value="pod" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-21">
+          <mxGeometry x="80" y="60" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-24" value="pod" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-21">
+          <mxGeometry x="120" y="100" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-25" value="pod" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-21">
+          <mxGeometry x="50" y="110" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-26" value="kubelet" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-21">
+          <mxGeometry x="80" y="30" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-27" value="kube-proxy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-21">
+          <mxGeometry x="120" y="30" width="86" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-29" value="pod" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="200" y="800" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-30" value="pause容器" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-29">
+          <mxGeometry x="30" y="40" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-31" value="业务容器" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-29">
+          <mxGeometry x="30" y="85" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-32" value="业务容器" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-29">
+          <mxGeometry x="30" y="120" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-33" value="业务容器" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="u5g1zcdmjYKx_YF-HA_9-29">
+          <mxGeometry x="30" y="160" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-34" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="u5g1zcdmjYKx_YF-HA_9-30" target="u5g1zcdmjYKx_YF-HA_9-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="950" as="sourcePoint" />
+            <mxPoint x="540" y="975" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u5g1zcdmjYKx_YF-HA_9-35" value="业务容器共享pause容器的网络栈和Volumn挂载卷" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="830" width="270" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
